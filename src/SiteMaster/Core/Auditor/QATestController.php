@@ -38,7 +38,7 @@ class QATestController implements ViewableInterface
         
         if ($this->site) {
             //only find a scan if we found a site
-            $this->scan = $this->site->getLatestScan();
+            $this->scan = $this->site->getLatestScan(true);
         }
         
         if ($this->scan) {
